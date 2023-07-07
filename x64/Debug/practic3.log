@@ -1,5 +1,2 @@
-﻿  practic3.cpp
-C:\Users\kosti\Desktop\Practic3\practic3\practic3.cpp(110,18): warning C4244: =: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kosti\Desktop\Practic3\practic3\practic3.cpp(158,28): warning C4244: =: преобразование "size_t" в "double", возможна потеря данных
-C:\Users\kosti\Desktop\Practic3\practic3\practic3.cpp(170,12): warning C4244: аргумент: преобразование "size_t" в "double", возможна потеря данных
+﻿  histogram.cpp
   practic3.vcxproj -> C:\Users\kosti\Desktop\Practic3\practic3\x64\Debug\practic3.exe
