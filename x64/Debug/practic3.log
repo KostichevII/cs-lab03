@@ -1,2 +1,4 @@
-﻿  histogram.cpp
-  practic3.vcxproj -> C:\Users\kosti\Desktop\Practic3\practic3\x64\Debug\practic3.exe
+﻿  histogram_svg.cpp
+C:\Users\student\Desktop\Задание 3\Practic3\practic3\histogram_svg.cpp(41,28): warning C4244: =: преобразование "size_t" в "double", возможна потеря данных
+C:\Users\student\Desktop\Задание 3\Practic3\practic3\histogram_svg.cpp(59,12): warning C4244: аргумент: преобразование "size_t" в "double", возможна потеря данных
+  practic3.vcxproj -> C:\Users\student\Desktop\Задание 3\Practic3\practic3\x64\Debug\practic3.exe

@@ -25,8 +25,13 @@ void show_histogram_svg(const vector<size_t>& bins, size_t MAX_HEIGHT) {
 	const auto TEXT_WIDTH = 60;
 	const auto BIN_HEIGHT = 30;
 	const auto BLOCK_WIDTH = 10;
+
+	vector <string> colors = { "blue", "green", "orange", "grey", "red", "yellow", "black" };
+
 	svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);
+
 	double top = 10;
+	int i = 0;
 	for (size_t bin : bins) {
 		double bin_width;
 		if (MAX_HEIGHT > MAX_ASTERISK) {
@@ -36,8 +41,14 @@ void show_histogram_svg(const vector<size_t>& bins, size_t MAX_HEIGHT) {
 			bin_width = BLOCK_WIDTH * bin;
 		}
 		svg_text(TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
-		svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT);
+		svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT, colors[i], colors[i] );
 		top += BIN_HEIGHT;
+		if (i < 5) {
+			i++;
+		}
+		else {
+			i = 0;
+		}
 	}
 	if (MAX_HEIGHT > MAX_ASTERISK) {
 		MAX_HEIGHT = MAX_ASTERISK;
